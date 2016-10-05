@@ -17,7 +17,9 @@
     <style include="shared-styles">
       :host {
         display: block;
-        background: #fff;
+        /*background: #fff;*/
+        background: var(--default-primary-color);
+        color: var(--text-primary-color);
       }
 
       .container {
@@ -91,7 +93,8 @@
 
     <div class="container">
       <h4 class="heading">[[localize('featured-people-title')]]</h4>
-      <div class="people-wrapper">
+      <h3>Announcing Soon!</h3>
+      <!-- <div class="people-wrapper">
         <template is="dom-repeat" items="[[featuredPeople]]" as="person">
           <a href$="/speakers/[[person.id]]" class="person">
             <iron-image
@@ -99,11 +102,11 @@
               src="[[person.photoUrl]]"
               sizing="cover"
             ></iron-image>
-            <iron-image
+            <!-- <iron-image
               class="company-logo"
               src="[[person.companyLogo]]"
               sizing="contain"
-            ></iron-image>
+            ></iron-image>-->
             <h4 class="name">[[person.name]]</h4>
             <span class="company">[[person.country]]</span>
           </a>
@@ -113,7 +116,7 @@
         <a href="/speakers" class="block-link">
           <paper-button>[[localize('featured-people-view-all')]]</paper-button>
         </a>
-      </div>
+      </div> -->
     </div>
 
   </template>
