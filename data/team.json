@@ -33,7 +33,7 @@
           }
         ],
         "title": "Website and everything"
-      },
+      },   
       {
         "name": "Harris Solangi",
         "photoUrl": "/images/people/harris_solangi.jpg",
@@ -45,7 +45,29 @@
           }
         ],
         "title": "Sponsors"
-      }
+      },
+      {
+        "name": "Nabeel Ahmed",
+        "photoUrl": "/images/people/nabeel_ahmed.jpg",
+        "socials": [
+          {
+            "icon": "facebook",
+            "link": "https://www.facebook.com/thenabeelahmed",
+            "name": "Facebook"
+          },
+          {
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/thenabeel",
+            "name": "LinkedIn"
+          },
+          {
+            "icon": "website",
+            "link": "http://thenabeel.com/",
+            "name": "Blog"
+          }
+        ],
+        "title": "Web Geek"
+      }      
     ]
   },
   {
