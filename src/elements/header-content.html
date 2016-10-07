@@ -130,7 +130,7 @@
           <div class="container">
             <div class="home-wrapper">
               <iron-image class="logo" src="/images/logo-light.svg" sizing="contain"
-                          alt="GDG DevFest Ukraine 2016"></iron-image>
+                          alt="Google DevFest Karachi 2016"></iron-image>
               <h3 class="dates">{{localize('dates')}}</h3>
               <h2 class="motto">{{localize('motto')}}</h2>
               <div class="open-video" on-tap="_openVideo">
@@ -138,7 +138,7 @@
                 {{localize('play-icon')}}
               </div>
               <div class="action-buttons">
-                <paper-button class="primary" on-tap="_scrollToTickets" raised>{{localize('buy-ticket')}}</paper-button>
+                <paper-button class="primary" on-tap="_openRegisterForm" raised>{{localize('register-self')}}</paper-button>
               </div>
             </div>
           </div>
@@ -200,17 +200,13 @@
         },
 
         _openVideo: function () {
-          HOVERBOARD.Elements.Template.openVideo('GDG DevFest Ukraine 2015', 'DfMnJAzOFng', true);
-          HOVERBOARD.Analytics.trackEvent('video', 'watch', 'GDG DevFest Ukraine 2015');
+          HOVERBOARD.Elements.Template.openVideo('GDG DevFest Karachi 2015', 'DfMnJAzOFng', true);
+          HOVERBOARD.Analytics.trackEvent('video', 'watch', 'GDG DevFest Karachi 2015');
         },
 
-        _scrollToTickets: function () {
-          HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'header');
-          Polymer.AppLayout.scroll({
-            top: HOVERBOARD.Elements.Tickets.getBoundingClientRect().top,
-            behavior: 'smooth',
-            target: HOVERBOARD.Elements.Scroller
-          });
+        _openRegisterForm: function () {
+          HOVERBOARD.Analytics.trackEvent('register', 'register_click', 'header');
+          window.open('#', '_blank');
         }
 
       });

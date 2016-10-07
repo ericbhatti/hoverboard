@@ -43,7 +43,7 @@
         max-width: 600px;
       }
 
-      .buy-button {
+      .register-button {
         margin-top: 30px;
         background: #fff;
         color: var(--primary-text-color);
@@ -85,7 +85,7 @@
       </div>
       <div class="details">[[localize('tickets-details')]]</div>
       <a href$="[[app.data.tickets.url]]" target="_blank" on-tap="_trackBuyClick">
-        <paper-button class="buy-button" raised>[[localize('buy-ticket')]]</paper-button>
+        <paper-button class="register-button" raised>[[localize('register-self')]]</paper-button>
       </a>
     </div>
 
@@ -107,7 +107,7 @@
         },
 
         _trackBuyClick: function (e) {
-          HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', e.currentTarget.href);
+          HOVERBOARD.Analytics.trackEvent('register', 'register_click', e.currentTarget.href);
         }
 
       });
